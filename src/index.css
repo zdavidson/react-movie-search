@@ -38,3 +38,69 @@ small {
 .form {
   display: grid;
 }
+
+.label {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (min-width: 768px) {
+  .form {
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .input {
+    margin-bottom: 0;
+  }
+}
+
+/* Card */
+
+.card-list {
+  margin-top: 4rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  padding: 2rem 4rem;
+}
+
+.card--title {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card--image {
+  display: block;
+  margin: 0 auto;
+}
