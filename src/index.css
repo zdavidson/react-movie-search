@@ -35,6 +35,8 @@ small {
   text-align: center;
 }
 
+/* Form */
+
 .form {
   display: grid;
 }
@@ -85,6 +87,8 @@ small {
 
 .card-list {
   margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -95,12 +99,31 @@ small {
   padding: 2rem 4rem;
 }
 
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease-in-out;
+}
+
 .card--title {
   font-size: 3.2rem;
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card--smallTitle{
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .card--image {
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
+}
+
+
+@media (min-width: 786px) {
+  .card {
+    margin-bottom: 4rem;
+  }
 }
